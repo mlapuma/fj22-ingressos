@@ -149,5 +149,13 @@
             </plugin>
         </plugins>
     </build>
+    
+    <developers>
+    	<developer>
+    		<name>Marcio La Puma</name>
+    		<email>marcio.lapuma@gmail.com</email>
+    	</developer>
+    </developers>
+    
 
 </project>
