@@ -44,7 +44,7 @@ public class Sessao {
 	}
 
 	public Filme getFilme() {
-		return filme;minutesToAdd
+		return filme;
 	}
 
 	public void setFilme(Filme filme) {
