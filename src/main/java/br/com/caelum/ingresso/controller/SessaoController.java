@@ -19,11 +19,11 @@ public class SessaoController {
 	private FilmeDao filmeDao;
 	
 	@GetMapping("/admin/sessao")
-	public ModelAndView form (@RequestParam("SalaId") Integer SalaId) {
+	public ModelAndView form (@RequestParam("salaId") Integer salaId) {
 		
 		ModelAndView modelAndView = new ModelAndView("sessao/sessao");
 		
-		modelAndView.addObject("sala", salaDao.findOne(SalaId));
+		modelAndView.addObject("sala", salaDao.findOne(salaId));
 		modelAndView.addObject("filme", filmeDao.findAll());
 		
 		return modelAndView;
