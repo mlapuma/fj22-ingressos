@@ -13,9 +13,13 @@ import javax.persistence.PersistenceContext;
 public class LugarDao {
 
     @PersistenceContext
-    private EntityManager manager;
+    private EntityManager em;
 
     public void save(Lugar lugar) {
-        manager.persist(lugar);
+        em.persist(lugar);
     }
+
+	public Lugar findOne(Integer id) {
+		return em.find(Lugar.class , id);
+	}
 }
